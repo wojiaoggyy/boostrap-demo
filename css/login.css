@@ -1,0 +1,53 @@
+body {
+    background: url('../images/login_bg.jpg') no-repeat top center fixed;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.form-control{border-radius: 25px; height: 52px;padding:6px 52px}
+.checkbox{padding-left: 40px;color: #fff;font-size: 14px}
+.btn-primary{
+    height: 52px;
+    background: #009688;
+    border-color:#009688;
+    width: 100%;
+    border-radius: 25px;
+    margin-bottom: 24px;
+    margin-top: 10px;
+}
+.btn-primary:hover{
+	background: #008175;
+    border-color:#008175;
+}
+.form-group{
+    margin-bottom: 26px;
+    position: relative;
+}
+.btn-primary a{
+    font-size: 14px;
+
+}
+.ico{display: block; position: absolute}
+.i1{ width: 29px; height: 26px;background: url("../images/i1.jpg") no-repeat;top:13px;left:15px}
+.i2{ width: 24px; height: 24px;background: url("../images/i2.jpg") no-repeat;top:13px;left:15px}
+#login-wrapper {
+    margin: 100px auto 0;
+    position: relative;
+}
+#logo-login h1 {
+    color: #009688;
+    font-size: 30px;
+    font-weight: 200;
+}
+#logo-login h1 span {
+    font-size: 12px;
+}
+.form-control:focus {
+    border-color: #0DB8DF !important;
+    box-shadow: none!important;
+    outline: 0 none;
+}
+.account-box {
+    padding: 20px;
+}

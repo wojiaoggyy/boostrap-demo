@@ -1,0 +1,242 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>表单</title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css">
+		<link rel="stylesheet" type="text/css" href="../plugs/Bootstrap/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="../plugs/ElementUi/lib/theme-default/index.css">
+		<link rel="stylesheet" type="text/css" href="../plugs/BootstrapValidator/css/bootstrapValidator.css">
+		<link rel="stylesheet" type="text/css" href="../plugs/Layer/skin/default/layer.css">
+		<link rel="stylesheet" type="text/css" href="../css/pages.css">
+	</head>
+
+	<body>
+		<div class="title fl100 padding_015">
+			<h4 class="fl100">
+           	 标题
+            <small>副标题</small>
+        </h4>
+		</div>
+		<div class="container-fluid mains" scroll="yes">
+			<div class="mains_inner">
+				<h2>基本实例</h2>
+				<form class="margb15">
+					<div class="form-group">
+						<label for="exampleInputEmail1">用户名</label>
+						<input type="email" class="form-control" id="exampleInputEmail1" placeholder="用户名">
+					</div>
+					<div class="form-group">
+						<label for="exampleInputPassword1">密码</label>
+						<input type="password" class="form-control" id="exampleInputPassword1" placeholder="密码">
+					</div>
+					<div class="form-group">
+						<label for="exampleInputFile">上传文件</label>
+						<input type="file" id="exampleInputFile">
+						<p class="help-block">请选择要上传的文档</p>
+					</div>
+					<div class="checkbox">
+						<label>
+				      <input type="checkbox"> 复选框
+				    </label>
+					</div>
+					<button type="submit" class="btn btn-default">提交</button>
+				</form>
+				<h2>内联表单</h2>
+				<form class="form-inline margb15">
+					<div class="form-group">
+						<label class="" for="example">用户名</label>
+						<input type="email" class="form-control" id="example" placeholder="用户名">
+					</div>
+					<div class="form-group">
+						<label class="" for="exampleInputPassword3">密码</label>
+						<input type="password" class="form-control" id="exampleInputPassword3" placeholder="密码">
+					</div>
+					<div class="checkbox">
+						<label>
+				      <input type="checkbox"> 复选框
+				    </label>
+					</div>
+					<button type="submit" class="btn btn-default">登陆</button>
+				</form>
+				<h2>水平排列的表单</h2>
+				<form class="form-horizontal margb15" id="date_show">
+					<div class="form-group">
+						<label for="" class="col-sm-2 control-label">用户名</label>
+						<div class="col-sm-10">
+							<input type="email" class="form-control" id="" placeholder="用户名">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="inputPassword3" class="col-sm-2 control-label">密码</label>
+						<div class="col-sm-10">
+							<input type="password" class="form-control" id="inputPassword3" placeholder="密码">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="" class="col-sm-2 control-label">下拉选择框</label>
+						<div class="col-sm-10">
+							<select class="form-control">
+							  <option>1</option>
+							  <option>2</option>
+							  <option>3</option>
+							  <option>4</option>
+							  <option>5</option>
+							</select>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="inputPassword3" class="col-sm-2 control-label">带图标的输入框</label>
+						<div class="col-sm-10">
+							<div class="input-group">
+							  <span class="input-group-addon">￥</span>
+							  <input type="text" class="form-control" placeholder="人民币">
+							  <span class="input-group-addon">.00</span>
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="" class="col-sm-2 control-label">选择年</label>
+						<div class="col-sm-10">
+							<el-date-picker v-model="value1" align="left" type="year" format="yyyy年" placeholder="选择年" :picker-options="pickerOptions01">
+							</el-date-picker>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="" class="col-sm-2 control-label">选择月</label>
+						<div class="col-sm-10">
+							<el-date-picker v-model="value2" align="left" type="month" format="yyyy年MM月" placeholder="选择月" :picker-options="pickerOptions02">
+							</el-date-picker>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="" class="col-sm-2 control-label">选择日</label>
+						<div class="col-sm-10">
+							<el-date-picker v-model="value3" align="left" type="date" format="yyyy年MM月dd日" placeholder="选择日期" :picker-options="pickerOptions03">
+							</el-date-picker>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="" class="col-sm-2 control-label">选择周</label>
+						<div class="col-sm-10">
+							<el-date-picker v-model="value4" align="left" type="week" format="yyyy年第WW周" placeholder="选择周" :picker-options="pickerOptions04">
+							</el-date-picker>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="" class="col-sm-2 control-label">选择时间范围</label>
+						<div class="col-sm-10">
+							<el-date-picker v-model="value5" align="left" type="daterange" format="yyyy年MM月dd日" placeholder="选择时间范围" :picker-options="pickerOptions05">
+							</el-date-picker>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="" class="col-sm-2 control-label">多选</label>
+						<div class="col-sm-10">
+							<label class="checkbox-inline">
+							  <input type="checkbox" id="inlineCheckbox1" value="option1"> 1
+							</label>
+							<label class="checkbox-inline">
+							  <input type="checkbox" id="inlineCheckbox2" value="option2"> 2
+							</label>
+							<label class="checkbox-inline">
+							  <input type="checkbox" id="inlineCheckbox3" value="option3"> 3
+							</label>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="" class="col-sm-2 control-label">单选</label>
+						<div class="col-sm-10">
+							<label class="radio-inline">
+							  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 1
+							</label>
+							<label class="radio-inline">
+							  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2
+							</label>
+							<label class="radio-inline">
+							  <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 3
+							</label>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="" class="col-sm-2 control-label">文本域</label>
+						<div class="col-sm-10">
+							<textarea class="form-control" rows="5"></textarea>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-sm-offset-2 col-sm-10">
+							<button type="submit" class="btn btn-default">登陆</button>
+						</div>
+					</div>
+				</form>
+				<h2>表单验证</h2>
+				<!--<div class="progress">
+				  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
+				    <span class="">45% 进度</span>
+				  </div>
+				</div>-->
+				<form class="form-horizontal margb15" id="form_demo" method="post">
+					<div class="form-group">
+						<label for="" class="col-sm-2 control-label">用户名</label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" id="" placeholder="text" name="username">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="" class="col-sm-2 control-label">密码</label>
+						<div class="col-sm-10">
+							<input type="password" class="form-control" id="" placeholder="password" name="password">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="" class="col-sm-2 control-label">确认密码</label>
+						<div class="col-sm-10">
+							<input type="password" class="form-control" id="" placeholder="confirmPassword" name="confirmPassword">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="" class="col-sm-2 control-label">email</label>
+						<div class="col-sm-10">
+							<input type="email" class="form-control" id="" placeholder="email" name="email">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="" class="col-sm-2 control-label">url</label>
+						<div class="col-sm-10">
+							<input type="url" class="form-control" id="" placeholder="url" name="url">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="" class="col-sm-2 control-label">phone</label>
+						<div class="col-sm-10">
+							<input type="tel" class="form-control" id="" placeholder="phone" name="phone">
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-sm-offset-2 col-sm-10">
+							<button type="submit" class="btn btn-default">登陆</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="../plugs/Jquery/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="../plugs/Bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="../plugs/BootstrapValidator/js/bootstrapValidator.min.js"></script>
+		<script type="text/javascript" src="../plugs/BootstrapValidator/js/language/zh_CN.js"></script>
+		<script type="text/javascript" src="../plugs/Layer/layer.js"></script>
+		<script type="text/javascript" src="../plugs/NiceScroll/jquery.nicescroll.min.js"></script>
+		<!--elementui-->
+		<script type="text/javascript" src="../plugs/ElementUi/vue.min.js"></script>
+		<script type="text/javascript" src="../plugs/ElementUi/lib/index.js"></script>
+		<script type="text/javascript" src="../js/pages_title.js"></script>
+		<script type="text/javascript" src="../js/elementui_init.js"></script>
+		<script type="text/javascript" src="../js/bootstrapV_init.js"></script>
+	</body>
+
+</html>

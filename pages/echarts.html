@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>echarts</title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css">
+		<link rel="stylesheet" type="text/css" href="../plugs/Bootstrap/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="../plugs/Layer/skin/default/layer.css">
+		<link rel="stylesheet" type="text/css" href="../css/pages.css">
+	</head>
+
+	<body>
+		<div class="title fl100 padding_015">
+			<h4 class="fl100">
+           	 标题
+            <small>副标题</small>
+        </h4>
+		</div>
+		<div class="container-fluid mains" scroll="yes">
+			<div class="row">
+				<!--<div class="col-lg-4 col-sm-6 col-xs-12">
+					<div class="unit">
+						<h4>散点图_标准</h4>
+						<div class="chart chart_01" id="chart_01"></div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6 col-xs-12">
+					<div class="unit">
+						<h4>散点图_地图</h4>
+						<div class="chart chart_02" id="chart_02"></div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6 col-xs-12">
+					<div class="unit">
+						<h4>折线图_标准</h4>
+						<div class="chart chart_03" id="chart_03"></div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6 col-xs-12">
+					<div class="unit">
+						<h4>折线图_面积</h4>
+						<div class="chart chart_04" id="chart_04"></div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6 col-xs-12">
+					<div class="unit">
+						<h4>柱状图_标准</h4>
+						<div class="chart chart_05" id="chart_05"></div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6 col-xs-12">
+					<div class="unit">
+						<h4>柱状图_动画延迟</h4>
+						<div class="chart chart_06" id="chart_06"></div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6 col-xs-12">
+					<div class="unit">
+						<h4>地图_模拟迁徙</h4>
+						<div class="chart chart_07" id="chart_07"></div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6 col-xs-12">
+					<div class="unit">
+						<h4>地图_特效线</h4>
+						<div class="chart chart_08" id="chart_08"></div>
+					</div>
+				</div>-->
+				<div class="col-lg-4 col-sm-6 col-xs-12">
+					<div class="unit">
+						<h4>饼图_标准</h4>
+						<div class="chart chart_09" id="chart_09"></div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6 col-xs-12">
+					<div class="unit">
+						<h4>饼图_玫瑰图</h4>
+						<div class="chart chart_10" id="chart_10"></div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6 col-xs-12">
+					<div class="unit">
+						<h4>雷达图_标准</h4>
+						<div class="chart chart_11" id="chart_11"></div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6 col-xs-12">
+					<div class="unit">
+						<h4>雷达图_大数据量</h4>
+						<div class="chart chart_12" id="chart_12"></div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6 col-xs-12">
+					<div class="unit">
+						<h4>漏斗图_标准</h4>
+						<div class="chart chart_13" id="chart_13"></div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6 col-xs-12">
+					<div class="unit">
+						<h4>漏斗图_对比</h4>
+						<div class="chart chart_14" id="chart_14"></div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6 col-xs-12">
+					<div class="unit">
+						<h4>仪表盘_标准</h4>
+						<div class="chart chart_15" id="chart_15"></div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6 col-xs-12">
+					<div class="unit">
+						<h4>仪表盘_自定义</h4>
+						<div class="chart chart_16" id="chart_16"></div>
+					</div>
+				</div>
+				<!--<div class="col-lg-4 col-sm-6 col-xs-12">
+					<div class="unit">
+						<h4>象形柱图_标准</h4>
+						<div class="chart chart_17" id="chart_17"></div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6 col-xs-12">
+					<div class="unit">
+						<h4>象形柱图_自定义</h4>
+						<div class="chart chart_18" id="chart_18"></div>
+					</div>
+				</div>-->
+			</div>
+		</div>
+
+		<script type="text/javascript" src="../plugs/Jquery/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="../plugs/Bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="../plugs/Layer/layer.js"></script>
+		<script type="text/javascript" src="../plugs/NiceScroll/jquery.nicescroll.min.js"></script>
+		<script type="text/javascript" src="../plugs/Echarts/echarts.js"></script>
+		<script type="text/javascript" src="../plugs/Echarts/bmap.js"></script>
+		<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&amp;ak=GqI5iimj0WDgCpivmzMEAHym2oYXxy4v"></script>
+		<script type="text/javascript" src="../plugs/Echarts/china.js"></script>
+		<script type="text/javascript" src="../js/pages_title.js"></script>
+		<script type="text/javascript" src="../js/echarts_demo.js"></script>
+	</body>
+
+</html>

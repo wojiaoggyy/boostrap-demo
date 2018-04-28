@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>表单</title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css">
+		<link rel="stylesheet" type="text/css" href="../plugs/Bootstrap/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="../plugs/ElementUi/lib/theme-default/index.css">
+		<link rel="stylesheet" type="text/css" href="../plugs/Bootstrap/BootstrapEditable/css/bootstrap-editable.css" />
+		<link rel="stylesheet" type="text/css" href="../plugs/Bootstrap/BootstrapTable/bootstrap-table.css">
+		<link rel="stylesheet" type="text/css" href="../plugs/Layer/skin/default/layer.css">
+		<link rel="stylesheet" type="text/css" href="../css/pages.css">
+	</head>
+
+	<body>
+		<div class="title fl100 padding_015">
+			<h4 class="fl100">
+           	 标题
+            <small>副标题</small>
+        </h4>
+		</div>
+		<div class="container-fluid mains" scroll="yes">
+			<div class="mains_inner">
+				<form class="form-inline margb15" role="form">
+					<div class="form-group">
+						<div class="input-group">
+							<div class="input-group-addon">查询条件</div>
+							<input class="form-control" type="email" placeholder="查询条件">
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="input-group">
+							<div class="input-group-addon">查询条件</div>
+							<select class="form-control">
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+							</select>
+						</div>
+					</div>
+					<div class="form-group" id="date_show">
+						<div class="input-group">
+							<div class="input-group-addon">时间条件</div>
+							<el-date-picker 
+								v-model="value2" 
+								align="left" 
+								type="month" 
+								format="yyyy年MM月" 
+								placeholder="选择月" 
+								:picker-options="pickerOptions02">
+							</el-date-picker>
+						</div>
+					</div>
+					<a class="btn btn-link">查询</a>
+					<button type="button" class="btn btn-default">查询</button>
+					<button type="button" class="btn btn-primary">查询</button>
+					<button type="button" class="btn btn-success">查询</button>
+					<button type="button" class="btn btn-info">查询</button>
+					<button type="button" class="btn btn-warning">查询</button>
+					<button type="button" class="btn btn-danger">查询</button>
+				</form>
+				<div class="">
+					<div id="toolbar" class="btn-group">
+						<button id="btn_add" type="button" class="btn btn-primary">
+			                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>  
+	                		新增
+			            </button>
+						<button id="btn_delete" type="button" class="btn btn-danger">
+			                <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+	                		删除
+			            </button>
+					</div>
+					<table id="BTable_demo">
+						<thead>
+							<tr>
+								<th data-field="state" data-checkbox="true"></th>
+								<th data-field="id">Item ID</th>
+								<th data-field="name">Item Name</th>
+								<th data-field="price">Item Price</th>
+							</tr>
+						</thead>
+					</table>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="../plugs/Jquery/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="../plugs/Bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="../plugs/Bootstrap/BootstrapTable/bootstrap-table.min.js"></script>
+		<script type="text/javascript" src="../plugs/Bootstrap/BootstrapTable/bootstrap-table-zh-CN.min.js"></script>
+		<script type="text/javascript" src="../plugs/Bootstrap/BootstrapEditable/bootstrap-table-editable.js"></script>
+		<script type="text/javascript" src="../plugs/Bootstrap/BootstrapEditable/js/bootstrap-editable.min.js"></script>
+		<script type="text/javascript" src="../plugs/Bootstrap/BootstrapTable/tableExport.min.js"></script>
+		<script type="text/javascript" src="../plugs/Bootstrap/BootstrapTable/bootstrap-table-export.min.js"></script>
+		<script type="text/javascript" src="../plugs/Layer/layer.js"></script>
+		<script type="text/javascript" src="../plugs/NiceScroll/jquery.nicescroll.min.js"></script>
+		<!--elementui-->
+		<script type="text/javascript" src="../plugs/ElementUi/vue.min.js"></script>
+		<script type="text/javascript" src="../plugs/ElementUi/lib/index.js"></script>
+		<script type="text/javascript" src="../js/elementui_init.js"></script>
+		<script type="text/javascript" src="../js/pages_title.js"></script>
+		<script type="text/javascript" src="../js/bootstrapTable_init.js"></script>
+	</body>
+
+</html>

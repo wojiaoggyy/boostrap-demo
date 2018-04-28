@@ -1,0 +1,18 @@
+$(".navbar").on("click",".lis",function(e){
+    e.stopPropagation();//阻止冒泡
+    if($(this).hasClass("open")){
+        $(this).children(".lis-out").slideUp("fast",function(){
+            $(this).parent().removeClass('open');
+        });
+        $(this).children("a").children(".fr.glyphicon").removeClass("rotate");
+    }else{
+        $(this).siblings(".open").children(".lis-out").slideUp("fast",function(){
+            $(this).parent().removeClass('open');
+        });
+        $(this).children(".lis-out").slideDown("fast",function(){
+            $(this).parent().addClass('open');
+        });
+        $(this).siblings(".open").children("a").children(".fr.glyphicon").removeClass("rotate");
+        $(this).children("a").children(".fr.glyphicon").addClass("rotate");
+    }
+});
